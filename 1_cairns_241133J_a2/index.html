@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dolphins!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!--pc navbar-->
+    <nav>
+        <ul>
+            <li id="page1btn">Behaviour</li>
+            <li id="page2btn">Intelligence</li>
+            <li id="page3btn">Adaptation</li>
+            <li id="page4btn">Biology</li>
+            <li id="page5btn">Minigame</li>
+        </ul>
+    </nav>
+    <!-- mobile nav bar -->
+    <nav class="phone" id="mobilenav">
+        <!-- open and close menu button -->
+        <button id="mobileNavbar">Open Menu</button>
+        <!-- hidden for pc, shown by class toggle -->
+        <ul id="mobileMenu">
+            <li id="mpage1btn">Behaviour</li>
+            <li id="mpage2btn">Adaptation</li>
+            <li id="mpage3btn">Biology</li>
+            <li id="mpage4btn">Intelligence</li>
+            <li id="mpage5btn">Minigame</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header">
+            <h1>Dolphins!</h1>
+        </div>
+        <button id="btnFS">FullScreen</button> <!-- full screen buttons -->
+        <button id="btnWS">Exit Full Screen</button>
+    </header>
+    <main id="pagecontainer">
+        <section class="page" id="page1">
+            <h2>Dolphin Behvaiours</h2>
+            <div class="behaviorContainergrid">
+                <div class="cards" id="bhv1">
+                    <img src="./images/bhv1.webp" class="bhvimgs" alt="dolphins swimming together">
+                    <h2>Social behaviour</h2>
+                    <h3>Pod Living</h3>
+                    <p>Dolphins live in pods, tight-knit groups of 2-30 individuals. In some areas with lots of food,
+                        pods can
+                        temporarily form superpods of over 100 dolphins.</p>
+                    <p>Pods provide protection, cooperative hunting, and childcare.</p>
+                    <h3>Social Bonds</h3>
+                    <p>Dolphins form long-term relationships, especially between mothers and calves, or between males
+                        who form
+                        alliances.</p>
+                    <p>Social grooming is done through rubbing and swimming in synchrony.</p>
+                    <h3>Alliances</h3>
+                    <p>Some male dolphins form temporary alliances to control access to females. These alliances can
+                        last for
+                        decades and involve cooperative behavior, showing deep social intelligence.</p>
+                </div>
+                <div class="cards" id="bhv2">
+                    <img src="./images/bhv2.webp" class="bhvimgs" alt="2 dolphins communicating">
+                    <h2>Communication</h2>
+                    <h3>Vocalizations</h3>
+                    <p>Use clicks, whistles, and burst pulses. Each dolphin has a “signature whistle” that functions
+                        like a
+                        name.</p>
+                    <h3>Echolocation</h3>
+                    <p>Clicking sounds are used for echolocation (like sonar) to navigate, hunt, and understand
+                        surroundings.
+                    </p>
+                    <p>Echoes bounce back from objects, helping them judge distance, shape, and size.</p>
+                    <h3>Body Language</h3>
+                    <p>Use jumps, tail slaps, head butts, and jaw claps and bubbles to communicate emotion or warnings.
+                    </p>
+                </div>
+                <div class="cards" id="bhv3">
+                    <img src="./images/bhv3.webp" class="bhvimgs" alt="2 dolphins playing ball">
+                    <h2>Cognitive & Play Behaviour</h2>
+                    <h3>Playfulness</h3>
+                    <p>Dolphins play with other animals, such as turtles or even humans. They surf waves, play with
+                        seaweed, and
+                        chase each other for fun.</p>
+                    <p>Play strengthens social bonds and helps practice hunting or social skills.</p>
+                    <h3>Imitation and Problem Solving</h3>
+                    <p>Can mimic human behavior or other dolphins, capable of abstract thinking—some trained
+                        dolphins can
+                        understand symbols, syntax, or even mirror themselves.</p>
+                    <h3>Tool Use</h3>
+                    <p>Some dolphins (like those in Shark Bay, Australia) use marine sponges on their snouts to
+                        protect
+                        themselves while foraging on sharp ocean floors.</p>
+                </div>
+                <div class="cards" id="bhv4">
+                    <img src="./images/bhv4.webp" class="bhvimgs" alt="dolphins making a mud ring">
+                    <h2>Foraging and Hunting Behaviour</h2>
+                    <h3>Cooperative Hunting</h3>
+                    <p>Herd fish into tight balls or push them toward shallow waters or nets.</p>
+                    <p>In Florida and parts of Africa, dolphins work with humans to drive fish into fishermen's
+                        nets—then
+                        grab escaping fish.</p>
+                    <h3>Mud Ring Feeding</h3>
+                    <p>Dolphins create circular plumes of mud to trap fish in a ring, making them leap out of the
+                        water—right into waiting dolphin mouths.</p>
+                    <h3>Strand Feeding (Rare)</h3>
+                    <p>In some places, dolphins beach themselves briefly to snatch fish from the shore—high-risk,
+                        learned
+                        behavior.</p>
+                </div>
+                <div class="cards" id="bhv5">
+                    <img src="./images/bhv5.webp" class="bhvimgs" alt="2 dolphins swimming together">
+                    <h2>Protective and Altruistic Behaviour</h2>
+                    <h3>Care for the Sick/Injured</h3>
+                    <p>Dolphins support injured pod mates, keeping them at the surface to breathe.</p>
+                    <h3>Inter-Species Help</h3>
+                    <p>Dolphins have protected swimmers from sharks, or rescuing stranded whales or other marine
+                        mammals.
+                    </p>
+                    <h3>Maternal Care</h3>
+                    <p>Calves stay with their mothers for 3-6 years, mothers nurse, protect, and teach calves to hunt
+                        and
+                        navigate</p>
+                </div>
+                <div class="cards" id="bhv6">
+                    <img src="./images/bhv6.webp" class="bhvimgs" alt="dolphin lying on its back">
+                    <h2>Resting Behaviour</h2>
+                    <h3>Unihemispheric Sleep</h3>
+                    <p>Dolphins sleep with one half of their brain at a time—the other half stays awake to breathe and
+                        watch
+                        for danger. They float slowly or swim in a relaxed state during rest.</p>
+                </div>
+            </div>
+        </section>
+        <section class="page" id="page2">
+            <h2>Dolphin Intelligence</h2>
+            <div class="intelligenceContainergrid">
+                <div class="zigzag" id="intlrow1">
+                    <h2>Self-Awareness and Consciousness</h2>
+                    <h3>Mirror Test (Self-Recognition)</h3>
+                    <p>What it is: An animal is marked with a spot of paint on its body in a place it can't normally
+                        see.
+                    </p>
+                    <p>When dolphins see themselves in a mirror, they turn their bodies to inspect the mark showing they
+                        understand “That's me in the mirror,” not “another dolphin.” Most animals
+                        fail this test—only a few species like humans, elephants, apes, and magpies pass it.</p>
+                    <a href="https://youtu.be/6M92OA-_5-Y?si=taGmyycyytasVK-o" class="yt" target="_blank">
+                        <p><u>Click here</u> to watch a video of them in action!</p>
+                    </a>
+                    <h2>Learning, Teaching, and Memory</h2>
+                    <h3>Observational Learning</h3>
+                    <p>Calves learn how to hunt, how to avoid danger, and how to use tools by watching older dolphins
+                        through
+                        guiding or demostrating.</p>
+                    <h3>Long-Term Memory</h3>
+                    <p>Dolphins remember the signature whistles (like names) of others even after 20+ years.</p>
+                    <p>Example: A dolphin in captivity recognized a whistle played through a speaker from another
+                        dolphin it
+                        hadn't seen in decades.</p>
+                </div>
+                <div id="intlrow1img">
+                    <a href="https://youtu.be/6M92OA-_5-Y?si=taGmyycyytasVK-o" class="yt" target="_blank"><img
+                            src="./images/intl1.webp" class="intlimgs"
+                            alt="2 dolphins looking at themselves in the mirror"></a>
+                </div>
+                <div id="intlrow2img">
+                    <img src="./images/intl2.webp" class="intlimgs" alt="dolphins carrying sponge">
+                </div>
+                <div class="zigzag" id="intlrow2">
+                    <h2>Tool Use and Cultural Transmission</h2>
+                    <h3>Sponge-Carrying Dolphins</h3>
+                    <p>In Shark Bay, Australia, dolphins have been observed putting sponges over their snouts while
+                        searching
+                        the seafloor for prey. This protects their skin from sharp coral or rocks. and is passed from
+                        mother
+                        to
+                        daughter like human culture, showing cultural learning, not just instinct. </p>
+                    <h2>Problem-Solving and Symbol Understanding</h2>
+                    <h3>Complex Training Tasks</h3>
+                    <p>Dolphins can understand novel instructions using symbols or gestures and combine multiple
+                        commands.
+                        They
+                        can also follow grammatical order: For example, “Take the hoop to the ball” vs “Take the ball to
+                        the
+                        hoop.”</p>
+                    <h3>Imitation Games</h3>
+                    <p>Dolphins can imitate human movements even with different body shapes. They also mimic sounds and
+                        dolphin
+                        actions without direct sight—suggesting strong auditory processing and memory.</p>
+                </div>
+                <div class="zigzag" id="intlrow3">
+                    <h2>Social Intelligence and Emotion</h2>
+                    <h3>Relationships and Alliances</h3>
+                    <p>Male dolphins form strategic alliances that last decades to help them access mates, involving
+                        trust,
+                        negotiation, and cooperation.</p>
+                    <h3>Empathy and Altruism</h3>
+                    <p>Helping sick pod members reach the surface.</p>
+                    <p>Guarding injured dolphins from predators.</p>
+                    <p>Even aiding humans and whales in trouble.</p>
+                    <h3>Grief and Mourning</h3>
+                    <p>Some dolphins carry dead calves or stay with them for hours or days—behavior similar to mourning.
+                    </p>
+                </div>
+                <div id="intlrow3img">
+                    <img src="./images/intl3.webp" class="intlimgs" alt="2 dolphins leaping out of the water">
+                </div>
+                <div id="intlrow4img">
+                    <img src="./images/intl4.webp" class="intlimgs" alt="2 dolphins laughing together, being playful">
+                </div>
+                <div class="zigzag" id="intlrow4">
+                    <h2>Brain Structure and Size</h2>
+                    <h3>Dolphin Brains</h3>
+                    <p>Very large brains relative to body size (second only to humans). The neocortex (used for
+                        problem-solving
+                        and awareness) is highly developed.</p>
+                    <p>The limbic system, associated with emotion and social behavior, is also well-developed.</p>
+                    <p>The folds in their cortex (gyri and sulci) are more complex than in humans—suggesting dense
+                        neural
+                        networks for complex thinking.</p>
+                    <h3>Playful Behvaiour</h3>
+                    <p>Play is seen as a sign of intelligence and boredom avoidance.</p>
+                    <h3>Creativity</h3>
+                    <p>They create new tricks and variations on learned behaviors in captivity, just to get attention or
+                        rewards.</p>
+                </div>
+            </div>
+        </section>
+        <section class="page" id="page3">
+            <div class="adpContainergrid">
+                <div id="adphead">
+                    <h2>Dolphin Adaptation</h2>
+                    <img src="./images/adphead1.webp" class="adpimgs" alt="anatomy of a dolphin">
+                </div>
+                <br>
+                <div class="block" id="adppt1">
+                    <h2>Physical Adaptations</h2> <!--point 1-->
+                    <h3>Streamlined Body</h3>
+                    <p>Dolphins have a torpedo-shaped body that reduces drag and allows efficient swimming.
+                        Their smooth skin also reduces water resistance and heals quickly from scratches.</p>
+                    <h3>Dorsal Fin & Flippers</h3>
+                    <p>Their back fin helps with balance and stability.
+                        The pectoral flippers are used for steering and braking, while the tail fluke propels them
+                        forward
+                        with
+                        strong vertical strokes.</p>
+                    <h3>Blubber</h3>
+                    <p>A thick layer of fat (blubber) insulates dolphins in cold water.
+                        It also serves as an energy reserve when food is scarce.</p>
+                </div>
+                <div class="block" id="adppt2">
+                    <h2>Defense and Survival Adaptations</h2> <!--point 2-->
+                    <h3>Speed and Agility</h3>
+                    <p>Their speed allows them to escape sharks and orcas.</p>
+                    <h3>Group Defense</h3>
+                    <p>Pods may surround a sick dolphin or mob a predator to protect themselves.</p>
+                    <h3>Camouflage (Counter-Shading)</h3>
+                    <p>Dolphins have dark backs and light bellies, making them hard to see from both above and below in
+                        the
+                        water.</p>
+                </div>
+                <div class="block" id="adppt3">
+                    <h2>Breathing Adaptations</h2> <!--point 3-->
+                    <h3>Blowhole</h3>
+                    <p>The blowhole on top of their head allows dolphins to breathe without lifting their whole body out
+                        of
+                        the
+                        water. It has a muscular flap that seals it shut underwater to prevent drowning.</p>
+                    <h3>Voluntary Breathing</h3>
+                    <p>Unlike humans, dolphins consciously control their breathing—they don't breathe automatically.
+                        This allows them to dive without inhaling water and stay underwater for several minutes (some up
+                        to
+                        15-20
+                        minutes).</p>
+                    <img src="./images/adp1.webp" class="adpimgs" alt="a dolphin's blowhole">
+                </div>
+                <div class="block" id="adppt4">
+                    <h2>Sensory Adaptations</h2> <!--point 4-->
+                    <h3>Echolocation</h3>
+                    <p>Dolphins emit clicks through a fatty organ in their forehead (<b>melon</b>).</p>
+                    <p>Echoes bounce off objects and return to the dolphin's lower jaw, where vibrations are sent to the
+                        brain.
+                        Echolocation helps them "see" in the dark, murky water, track prey, and avoid obstacles.</p>
+                    <h3>Acute Hearing</h3>
+                    <p>Their hearing is extremely sharp and works well both in water and air.</p>
+                    <p>They can detect high-frequency sounds beyond the range of human hearing.</p>
+                    <h3>Good Vision</h3>
+                    <p>Dolphins have excellent underwater vision, and can also see clearly in air thanks to specialized
+                        eye
+                        muscles.</p>
+                    <p>They can detect motion and contrast better than fine details.</p>
+                    <h3>Limited Smell, Enhanced Taste</h3>
+                    <p>Dolphins have little to no sense of smell, but some species may taste seawater to detect
+                        chemicals
+                        from
+                        prey
+                        or other dolphins.</p>
+                </div>
+                <div class="block" id="adppt5">
+                    <h2>Feeding Adaptations</h2> <!--point 5-->
+                    <h3>Conical Teeth</h3>
+                    <p>Dolphins have conical, pointed teeth suited for grabbing slippery prey, like fish and squid.
+                        They swallow prey whole—they don't chew.</p>
+                    <h3>Fast, Agile Swimmers</h3>
+                    <p>Dolphins can reach bursts of 55 km/h (34 mph) to catch prey or evade predators.
+                        Their muscles store myoglobin, allowing them to store oxygen for extended dives.</p>
+                    <h3>Cooperative Hunting</h3>
+                    <p>In some species, dolphins hunt in teams to herd fish into balls, or drive them toward shallow
+                        water.
+                        They use mud rings, wave washing, or beaching techniques to trap prey.</p>
+                </div>
+                <div class="block" id="adppt6">
+                    <h2>Thermoregulation (Temperature Control)</h2> <!--point 6-->
+                    <h3>Counter-Current Heat Exchange</h3>
+                    <p>Blood vessels in the flippers and fins conserve heat by transferring warmth from arteries to
+                        nearby
+                        veins, helping to maintain core body temperature.</p>
+                    <h2>Sleeping Adaptations</h2> <!--point 7-->
+                    <h3>Unihemispheric Slow-Wave Sleep</h3>
+                    <p>Dolphins sleep by shutting down one hemisphere of their brain at a time.
+                        This allows them to stay partially alert, continue swimming, and surface to breathe while
+                        resting.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="page" id="page4">
+            <div class="bioflexContainer">
+                <div id="bioimg1">
+                    <h2>Dolphin Biology</h2>
+                    <img src="./images/bio1.webp" class="bioimgs"
+                        alt="more specific anatomy, displaying dolphin organs and bones">
+                </div>
+                <div class="biolayout" id="biopt1">
+                    <h2>Teeth and Feeding Biology</h2> <!--point 1-->
+                    <p>Most dolphins have homodont teeth—all the same shape.</p>
+                    <h2>Nervous System and Brain</h2> <!--point 2-->
+                    <h3>Brain Features</h3>
+                    <p>Large, complex brains with a high encephalization quotient (brain-to-body ratio).</p>
+                    <p>Highly folded cerebral cortex → suggests advanced thinking.</p>
+                    <p>Well-developed limbic system for emotional processing.</p>
+                    <h3>Intelligence</h3>
+                    <p>Supports self-awareness, problem-solving, memory, learning, and communication.</p>
+                    <h2>Sensory Biology</h2> <!--point 3-->
+                    <h3>Hearing and Echolocation</h3>
+                    <p>Specialized inner ear structures tuned for underwater sound.</p>
+                    <p>Use echolocation: produce clicks via the melon, receive echoes through the jawbone.</p>
+                    <h3>Vision</h3>
+                    <p>Good eyesight in air and water.</p>
+                    <p>Adjusts focus via muscles in the lens and cornea.</p>
+                    <h3>Touch</h3>
+                    <p>Sensitive skin, especially on the rostrum (snout).</p>
+                    <p>Use touch for bonding and communication. Nerve endings from sensitive skin can be used to
+                        feel/touch
+                        objects which is why tame dolphins like to be stroked</p>
+                    <p>Their skin is also delicate and easily injured by rough surfaces, fishing nets or by being cut by
+                        a
+                        sharp
+                        fingernail. However, the healing process is quick.</p>
+                    <h3>Taste</h3>
+                    <p>Can detect salty, sour, and bitter tastes; little or no sense of smell.</p>
+                </div>
+                <div class="biolayout" id="biopt2">
+                    <h2>Anatomy and Physical Structure</h2> <!--point 4-->
+                    <h3>Size and Shape</h3>
+                    <p>Ranges from 1.5 meters (Maui's dolphin) to over 9 meters (orca).</p>
+                    <p>Streamlined, torpedo-shaped bodies for efficient swimming.</p>
+                    <p>Pectoral flippers: used for steering.</p>
+                    <p>Dorsal fin: stabilizes the body.</p>
+                    <p>Tail flukes: generate powerful thrust and also allow them to jump 15 ft in the air.</p>
+                    <h3>Skin and Color</h3>
+                    <p>Smooth, rubbery skin that shed regularly for hydrodynamic efficiency.</p>
+                    <p>Typically counter-shaded: dark back, light belly for camouflage.</p>
+                    <h3>Skeleton</h3>
+                    <p>Flexible spine for vertical tail movement.</p>
+                    <p>Reduced or absent hind limbs (vestigial bones remain).</p>
+                    <p>No external ears; sound is received through the lower jaw.</p>
+                    <h2>Circulatory and Respiratory Systems</h2> <!--point 5-->
+                    <h3>Heart and Circulation</h3>
+                    <p>Four-chambered heart (like all mammals).</p>
+                    <p>Capable of slowing heart rate during dives (called bradycardia) to conserve oxygen.</p>
+                    <h3>Breathing and Blowhole</h3>
+                    <p>Dolphins breathe through a single blowhole on top of their head.</p>
+                    <p>Voluntary breathers: must consciously come up to breathe.</p>
+                    <p>Can hold breath 5-15 minutes, depending on species.</p>
+                    <h2>Thermoregulation</h2> <!--point 6-->
+                    <p>Dolphins are endothermic (warm-blooded).</p>
+                    <p>Blubber helps retain heat in cold water.</p>
+                    <p>Countercurrent heat exchange in fins/flippers helps maintain body temperature.</p>
+                </div>
+                <div id="biopt3img">
+                    <img src="./images/bio2.webp" class="bioimgs" alt="evolution of dolphins">
+                </div>
+                <div class="biolayout" id="biopt3">
+                    <h2>Digestive System</h2> <!--point 7-->
+                    <p>Dolphins have a three-chambered stomach:</p>
+                    <p>Forestomach - storage.</p>
+                    <p>Main stomach - digestion.</p>
+                    <p>Pyloric stomach - further breakdown.</p>
+                    <p>They swallow prey whole, and digestion happens internally without chewing.</p>
+                </div>
+                <div class="biolayout" id="biopt4">
+                    <h2>Reproductive System</h2> <!--point 8-->
+                    <h3>Sexual Maturity</h3>
+                    <p>Dolphins reach sexual maturity between 5-15 years, depending on species.</p>
+                    <h3>Mating</h3>
+                    <p>Mating is seasonal or year-round, depending on environment.</p>
+                    <p>Males may form alliances to access females.</p>
+                    <h3>Gestation and Birth</h3>
+                    <p>Gestation lasts 10-17 months.</p>
+                    <p>Usually 1 calf is born tail-first to avoid drowning.</p>
+                    <p>Mothers nurse calves for 1-2 years, and stay close for several years for teaching.</p>
+                </div>
+                <div id="biopt4img">
+                    <img src="./images/bio3.webp" class="bioimgs" alt="biological image of a dolphin's stomach">
+                </div>
+                <div class="biolayout" id="biopt5">
+                    <h2>Classification (Taxonomy)</h2> <!--point 9-->
+                    <p>Dolphins are mammals in the order Cetacea, which includes whales and porpoises.</p>
+                    <p>There are 40+ dolphin species, including bottlenose dolphin (Tursiops truncatus), spinner dolphin
+                        (Stenella longirostris), orca/Killer whale (Orcinus orca) - the largest dolphin and amazon river
+                        dolphin
+                        (Inia geoffrensis)</p>
+                </div>
+                <div class="biolayout" id="biopt6">
+                    <h2>Genetics and Evolution</h2> <!--point 10-->
+                    <h3>Evolution from Land Mammals</h3>
+                    <p>Dolphins evolved from four-legged land mammals (~50 million years ago).</p>
+                    <p>Ancestor: a wolf-like animal called Pakicetus.</p>
+                    <p>Over time, hind limbs disappeared, nostrils moved to the top of the head, and forelimbs turned
+                        into
+                        flippers.</p>
+                    <h3>Vestigial Structures</h3>
+                    <p>Remnants of pelvic bones still exist inside dolphin bodies—evidence of land ancestry.</p>
+                </div>
+            </div>
+        </section>
+        <section class="page" id="page5">
+            <div id="quizHead">
+                <h2>Minigame & Quiz</h2>
+                <p>Let's have a mini quiz before commencing the minigame!</p>
+            </div>
+            <br>
+            <div class="quiz" id="quizQ1">
+                <p>1. How do dolphins communicate?</p>
+                <label><input type="radio" name="q1" value="bubbles"> with
+                    bubbles</label><br><!--label allows entire text area to be clickable-->
+                <label><input type="radio" name="q1" value="jumps"> jumps</label><br>
+                <label><input type="radio" name="q1" value="clicks"> clicks, whistles</label><br>
+                <label><input type="radio" name="q1" value="aota"> all of the above</label><br>
+                <!-- correct ans -->
+            </div>
+            <br>
+            <div class="quiz" id="quizQ2">
+                <p>2. What is something a dolphin can do but most animals can't?</p>
+                <label><input type="radio" name="q2" value="recognition"> self recognition</label><br>
+                <!-- correct ans -->
+                <label><input type="radio" name="q2" value="hunting"> hunting</label><br>
+                <label><input type="radio" name="q2" value="grieving"> greiving over dead calves</label><br>
+                <label><input type="radio" name="q2" value="learning"> learning by observing</label><br>
+            </div>
+            <br>
+            <div class="quiz" id="quizQ3">
+                <p>3. Which is a dolphin adaptation?</p>
+                <label><input type="radio" name="q3" value="smell"> enhanced smell, limited taste</label><br>
+                <label><input type="radio" name="q3" value="chew"> chewing prey</label><br>
+                <label><input type="radio" name="q3" value="vision"> poor vision</label><br>
+                <label><input type="radio" name="q3" value="hearing"> acute hearing</label><br>
+                <!-- correct ans -->
+            </div>
+            <br>
+            <div class="quiz" id="quizQ4">
+                <p>4. How many chambers are there in a dolphin's stomach?</p>
+                <label><input type="radio" name="q4" value="2"> 2</label><br>
+                <label><input type="radio" name="q4" value="3"> 3</label><br> <!-- correct ans -->
+                <label><input type="radio" name="q4" value="4"> 4</label><br>
+                <label><input type="radio" name="q4" value="5"> 5</label><br>
+            </div>
+            <br>
+            <div class="quiz" id="quizQ5">
+                <p>5. How do dolphins recognise each other?</p>
+                <label><input type="radio" name="q5" value="shape"> body shape</label><br>
+                <label><input type="radio" name="q5" value="face"> face</label><br>
+                <label><input type="radio" name="q5" value="whistles"> signature whistles</label><br>
+                <!-- correct ans -->
+                <label><input type="radio" name="q5" value="swim"> the way they swim</label><br>
+            </div>
+            <br>
+            <div class="quiz" id="quizQ6">
+                <p>6. Can dolphins imitate humans?</p>
+                <label><input type="radio" name="q6" value="yes"> yes</label><br> <!-- correct ans -->
+                <label><input type="radio" name="q6" value="no"> no</label><br>
+            </div>
+            <br>
+            <div class="quiz" id="quizQ7">
+                <p>7. How many species of dolphins are there?</p>
+                <label><input type="radio" name="q7" value="20"> 20</label><br>
+                <label><input type="radio" name="q7" value="30"> 30</label><br>
+                <label><input type="radio" name="q7" value="40"> 40</label><br>
+                <label><input type="radio" name="q7" value="50"> 50</label><br> <!-- correct ans -->
+            </div>
+            <br>
+            <div id="submission">
+                <button id="btnSubmit">Submit Quiz</button>
+                <h3 id="scorebox">Status:Not submitted</h3>
+            </div>
+            <br><br>
+            <div id="instructions">
+                <p> Make the dolphin jump through the red hoop to gain points! </p>
+                <p> Fish may appear. Catch and eat them to gain bonus points! </p>
+                <div id="gameScorebox"> <!-- 3rd row item 1 -->
+                    Score: <span id="gameScore">0</span>
+                </div>
+                <div id="mButtonContainer">
+                    <button class="startButton">Start</button> <!-- start button -->
+                    <button class="jumpButton">Jump</button> <!-- jump button -->
+                    <button class="resetButton">Reset</button><!-- reset game button -->
+                </div>
+            </div>
+            <br>
+            <div class="game"> <!-- dolphins jumping through hoops game -->
+                <div id="gameScoreContainer"></div>
+                <div id="gameOcean"></div> <!--top layer-->
+                <div id="gameLHoop"></div> <!-- top layer-->
+                <div id="gameDolphin"></div> <!-- middle layer -->
+                <div id="gameFish"></div> <!-- middle layer -->
+                <div id="gameRHoop"></div> <!-- bottom layer -->
+            </div>
+        </section>
+    </main>
+</body>
+<header>
+    <h2>QR code</h2>
+</header>
+<footer> <!-- qr code + name -->
+    <img id="qrCodeImg" src="qrcodeimg.png">
+    <p>By cairns 241133J</p>
+</footer>
+
+</html>
